@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:sezon_app/utils/theme_manager.dart';
 
 
 void main() async {
@@ -20,9 +21,10 @@ class SezonApp extends StatelessWidget {
   const SezonApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sezon App',
+      theme: ThemeManager.theme,
     );
   }
 }
