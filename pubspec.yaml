@@ -25,6 +25,7 @@ dependencies:
   pinput: ^2.2.31
   shared_preferences: ^2.2.0
   smooth_page_indicator: ^1.1.0
+  get_it: ^7.6.0
 
 dev_dependencies:
   flutter_test:
