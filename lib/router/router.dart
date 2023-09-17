@@ -1,4 +1,11 @@
 import 'package:get/get.dart';
+import 'package:sezon_app/controllers/auth_controller/login_binding.dart';
+import 'package:sezon_app/controllers/auth_controller/register_binding.dart';
+import 'package:sezon_app/router/route_name.dart';
+import 'package:sezon_app/views/auth/login_screen.dart';
+import 'package:sezon_app/views/auth/otp/otp_binding.dart';
+import 'package:sezon_app/views/auth/otp/otp_screen.dart';
+import 'package:sezon_app/views/auth/register_screen.dart';
 
 
 class AppRoute {
