@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1015843718442",
+    "project_id": "sezon-app-41811",
+    "storage_bucket": "sezon-app-41811.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015843718442:android:720cda34dc3011cd354a53",
+        "android_client_info": {
+          "package_name": "com.example.sezon_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQAwPPxmJaKAtoISoDl8x2H7GyIzQBPck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
