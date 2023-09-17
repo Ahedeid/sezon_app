@@ -5,7 +5,6 @@ import 'package:get_it/get_it.dart';
 import 'package:sezon_app/services/sharedPref/shared_pref.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 var sl = GetIt.instance;
 
 Future init() async {
@@ -23,5 +22,4 @@ Future init() async {
   sl.registerLazySingleton<FirebaseAuth>(() => firebaseAuth);
   sl.registerLazySingleton<FirebaseFirestore>(() => firebaseFireStore);
   sl.registerLazySingleton<FirebaseStorage>(() => firebaseStorage);
-
 }

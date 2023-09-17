@@ -2,21 +2,12 @@ import 'dart:convert';
 import 'package:sezon_app/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-enum PrefKeys {
-  user,
-  isLoggedIn,
-  id,
-}
+enum PrefKeys { user, isLoggedIn, id }
 
 class SharedPrefController {
-
   SharedPreferences preferences;
 
   SharedPrefController({required this.preferences});
-
-  Future<void> init() async {
-    preferences = await SharedPreferences.getInstance();
-  }
 
   save(UserModel user) async {
     String userEncoded = jsonEncode(user.toJson());
