@@ -83,9 +83,9 @@ class HomeScreen extends StatelessWidget {
                               mainAxisSpacing: 10),
                       itemBuilder: (_, index) => ProductWidget(
                         imageHeight: 135,
-                        productModel: homeController.allProducts[index],
+                        productModel: homeController.productsList[index],
                       ),
-                      itemCount: homeController.allProducts.length,
+                      itemCount: homeController.productsList.length,
                     );
             },
           )

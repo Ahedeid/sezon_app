@@ -1,14 +1,15 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:sezon_app/models/categoy_model.dart';
 import 'package:sezon_app/models/products_model.dart';
 import 'package:sezon_app/services/homeServices/homeServices.dart';
 
-
 class HomeController extends GetxController {
   List<CategoryModel> categories = [];
   List<ProductModel> productsCategory = [];
-
+  var productsList = <ProductModel>[];
   bool categoryLoading = false;
   bool productsLoading = false;
 
@@ -21,12 +22,10 @@ class HomeController extends GetxController {
     update();
   }
 
-  List<ProductModel> allProducts = [];
   getAllProducts() async {
     productsLoading = true;
     update();
-    allProducts = await HomeService.instance.getAllProducts();
-
+    productsList = await HomeService.instance.getAllProducts();
     update();
     productsLoading = false;
     update();
@@ -52,5 +51,18 @@ class HomeController extends GetxController {
     productsCategory = newProductsList;
     update();
     update();
+  }
+
+  Future<void> searchProduct({required String text}) async {
+    try {
+     var allProducts = await HomeService.instance.getAllProducts();
+      productsList = allProducts
+          .where((element) =>
+              element.name.toLowerCase().contains(text.toLowerCase()))
+          .toList();
+      update();
+    } on FirebaseException catch (e) {
+      debugPrint(e.toString());
+    }
   }
 }
