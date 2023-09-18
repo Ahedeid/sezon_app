@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sezon_app/utils/assets_path.dart';
+import 'package:sezon_app/utils/style_manager.dart';
 
-import '../../../../utils/assets_path.dart';
-import '../../../../utils/style_manager.dart';
 
 class OnProgressOrders extends StatelessWidget {
   const OnProgressOrders({super.key});
@@ -29,13 +30,13 @@ class OnProgressOrders extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('خزف ملون صنع يدوي',
+                      Text('handmade_colorful_ceramics'.tr,
                           style: StyleManager.smallText(
                             fontWeight: FontWeight.bold,
                             color: Colors.black,
                           )),
                       Text(
-                          'هذا النص هو مثال لنص يمكن أن يستبدل \nتوليد هذا النص من مولد النص العربى...')
+                          'this_text_is_an_example_of_text'.tr)
                     ],
                   )
                 ]),

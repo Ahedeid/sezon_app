@@ -10,7 +10,7 @@ class CategoryScreen extends GetView<CategoryController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: const CustomAppBar(title: 'category'),
+        appBar:  CustomAppBar(title: 'category'.tr),
         body: GetBuilder<CategoryController>(
           init: CategoryController(),
           builder: (categoryController) => Row(

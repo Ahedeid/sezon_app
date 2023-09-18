@@ -36,7 +36,7 @@ class PaymentMethod extends StatelessWidget {
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const LabelWidget(text: 'اختر طريقة الدفع'),
+             LabelWidget(text: 'choose_payment_method'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
@@ -59,7 +59,7 @@ class PaymentMethod extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
-                  const Text('بطاقة stripe'),
+                   Text('stripe_card'.tr),
                 ],
               ),
               onChanged: (value) {
@@ -86,7 +86,7 @@ class PaymentMethod extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
-                  const Text('بطاقة الفيزا'),
+                   Text('visa_card'.tr),
                 ],
               ),
               onChanged: (value) {
@@ -106,7 +106,7 @@ class PaymentMethod extends StatelessWidget {
                 );
               },
               child: Text(
-                'التالي',
+                'next'.tr,
                 style: StyleManager.smallText(
                     fontWeight: FontWeight.bold, color: Colors.white),
               ),

@@ -29,14 +29,14 @@ class PaymentMethodDetails extends StatelessWidget {
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const LabelWidget(text: 'بيانات البطاقة'),
+             LabelWidget(text: 'card_data'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
             ElevatedButton(
               onPressed: () {},
               child: Text(
-                'حفظ',
+                'save'.tr,
                 style: StyleManager.smallText(
                     fontWeight: FontWeight.bold, color: Colors.white),
               ),

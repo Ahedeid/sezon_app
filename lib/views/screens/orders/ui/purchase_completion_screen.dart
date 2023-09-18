@@ -10,7 +10,7 @@ import 'package:sezon_app/views/screens/orders/orders_compponents/product_charac
 
 class PurchaseCompletionScreen extends StatelessWidget {
    PurchaseCompletionScreen({super.key});
-  var value = Get.put(OrderController());
+   OrderController value = Get.put(OrderController());
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class PurchaseCompletionScreen extends StatelessWidget {
             },
             icon: const Icon(Icons.arrow_back_ios)),
         title: Text(
-          'إتمام عملية الشراء',
+          'complete_your_purchase'.tr,
           style: StyleManager.headline1(fontSize: 18),
         ),
         centerTitle: true,
@@ -40,7 +40,7 @@ class PurchaseCompletionScreen extends StatelessWidget {
                     builder: (context) => const AddressBottomSheetWidget(),
                   );
                 },
-                title: 'إضافة عنوان'),
+                title: 'add_address'.tr),
             ListTilePurchaseWidget(
                 icon: AssetPath.paymentIcon,
                 onTap: () {
@@ -49,7 +49,7 @@ class PurchaseCompletionScreen extends StatelessWidget {
                     builder: (context) => const PaymentMethod(),
                   );
                 },
-                title: 'اختر طريقة دفع'),
+                title: 'choose_a_payment_method'.tr),
             ListTilePurchaseWidget(
                 icon: AssetPath.productCharIcon,
                 onTap: () {
@@ -59,12 +59,12 @@ class PurchaseCompletionScreen extends StatelessWidget {
                     builder: (context) => const ProductCharacteristic(),
                   );
                 },
-                title: 'اضافة مواصفات المنتج'),
+                title: 'add_product_specifications'.tr),
             const Spacer(),
             ElevatedButton(
               onPressed: () {},
               child: Text(
-                'تأكيد الطلب',
+                'confirmation'.tr,
                 style: StyleManager.smallText(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,

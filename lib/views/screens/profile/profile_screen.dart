@@ -9,7 +9,6 @@ import 'package:sezon_app/utils/style_manager.dart';
 import 'package:sezon_app/views/screens/profile/widgets/profile_bottom_sheet_widget.dart';
 import 'package:sezon_app/views/screens/profile/widgets/profile_widget.dart';
 
-
 class ProfileScreen extends GetView<ProfileController> {
   const ProfileScreen({super.key});
 
@@ -24,7 +23,7 @@ class ProfileScreen extends GetView<ProfileController> {
               },
               icon: const Icon(Icons.arrow_back_ios)),
           title: Text(
-            'الملف الشخصي',
+            'profile'.tr,
             style: StyleManager.headline1(fontSize: 18),
           ),
           centerTitle: true,
@@ -95,7 +94,7 @@ class ProfileScreen extends GetView<ProfileController> {
                         );
                       },
                       child: Text(
-                        'تعديل الملف الشخصي',
+                        'edit_profile'.tr,
                         style: StyleManager.smallText(
                           color: Colors.white,
                         ),
@@ -106,7 +105,7 @@ class ProfileScreen extends GetView<ProfileController> {
                     ),
                     ProfileWidget(
                       icon: Icons.language,
-                      text: 'اللغة',
+                      text: 'language'.tr,
                       onTap: () {},
                     ),
                     const SizedBox(
@@ -114,7 +113,7 @@ class ProfileScreen extends GetView<ProfileController> {
                     ),
                     ProfileWidget(
                       icon: Icons.logout,
-                      text: 'تسجيل الخروج',
+                      text: 'logout'.tr,
                       onTap: () {
                         sl<SharedPrefController>().logout();
                         Get.offAllNamed(RouteName.loginRoute);

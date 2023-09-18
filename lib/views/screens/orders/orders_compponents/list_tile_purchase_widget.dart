@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:sezon_app/utils/style_manager.dart';
 
-import '../../../../utils/style_manager.dart';
 
 class ListTilePurchaseWidget extends StatelessWidget {
   const ListTilePurchaseWidget({
@@ -17,7 +17,7 @@ class ListTilePurchaseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0.5,
-      margin: EdgeInsets.only(bottom: 10),
+      margin: const EdgeInsets.only(bottom: 10),
       color: Colors.white,
       surfaceTintColor: Colors.white,
       shape: RoundedRectangleBorder(
@@ -30,7 +30,7 @@ class ListTilePurchaseWidget extends StatelessWidget {
           title,
           style: StyleManager.headline2,
         ),
-        trailing: Icon(Icons.arrow_forward_ios),
+        trailing: const Icon(Icons.arrow_forward_ios),
       ),
     );
   }

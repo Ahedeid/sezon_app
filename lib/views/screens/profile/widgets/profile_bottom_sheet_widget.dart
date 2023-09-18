@@ -6,12 +6,10 @@ import 'package:sezon_app/utils/validation_manager.dart';
 import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
 import 'package:sezon_app/views/widget/cutom_text_field_widget.dart';
 
-
 class ProfileBottomSheet extends GetView<ProfileController> {
   const ProfileBottomSheet({
     super.key,
   });
-
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +25,7 @@ class ProfileBottomSheet extends GetView<ProfileController> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const LabelWidget(text: 'تعديل الملف الشخصي'),
+            LabelWidget(text: 'edit_profile'.tr),
             const SizedBox(
               height: 30,
             ),
@@ -64,7 +62,7 @@ class ProfileBottomSheet extends GetView<ProfileController> {
                 controller.editProfile();
               },
               child: Text(
-                'حفظ',
+                'save'.tr,
                 style: StyleManager.smallText(color: Colors.white),
               ),
             ),

@@ -7,7 +7,7 @@ import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/router/router.dart';
 import 'package:sezon_app/service_locator.dart';
 import 'package:sezon_app/services/authServices/auth_service.dart';
-import 'package:sezon_app/services/sharedPref/shared_pref.dart';
+import 'package:sezon_app/utils/languages.dart';
 import 'package:sezon_app/utils/theme_manager.dart';
 
 void main() async {
@@ -40,6 +40,8 @@ class SezonApp extends StatelessWidget {
       theme: ThemeManager.theme,
       initialRoute: RouteName.splashRoute,
       getPages: AppRoute.routes,
+      translations: Languages(),
+      locale: const Locale('ar'),
     );
   }
 }

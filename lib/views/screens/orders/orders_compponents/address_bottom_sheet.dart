@@ -4,8 +4,6 @@ import 'package:sezon_app/utils/style_manager.dart';
 import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
 import 'package:sezon_app/views/widget/cutom_text_field_widget.dart';
 
-
-
 class AddressBottomSheetWidget extends StatelessWidget {
   const AddressBottomSheetWidget({
     super.key,
@@ -34,41 +32,41 @@ class AddressBottomSheetWidget extends StatelessWidget {
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const LabelWidget(text: 'إضافة عنوان جديد'),
+            LabelWidget(text: 'add_a_new_address'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(hintText: 'الامارات', labelText: 'الدولة'),
+            CustomTextField(hintText: 'the_UAE'.tr, labelText: 'country'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(
-                hintText: 'المنطقة، محافظة، ولاية...', labelText: 'المنطقة'),
+            CustomTextField(
+                hintText: 'region_province_state'.tr, labelText: 'region'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(hintText: 'الشيخ زايد', labelText: 'المدينة'),
+            CustomTextField(hintText: 'sheikh_zayed'.tr, labelText: 'city'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(
-                hintText: 'الشارع، المنزل، الوحدة السكنية...',
-                labelText: 'الشارع'),
+            CustomTextField(
+                hintText: 'Street_house_residential_unit'.tr,
+                labelText: 'street'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(hintText: '872', labelText: 'الرمز البريدي'),
+            CustomTextField(hintText: '872324', labelText: 'postal_code'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
-            const CustomTextField(
-                hintText: '+9720592072429', labelText: 'رقم الهاتف'),
+            CustomTextField(
+                hintText: '+972592760208', labelText: 'phone_number'.tr),
             SizedBox(
               height: Get.size.height / 30,
             ),
             ElevatedButton(
                 onPressed: () {},
-                child: Text('حفظ',
+                child: Text('save'.tr,
                     style: StyleManager.smallText(
                         fontWeight: FontWeight.bold, color: Colors.white)))
           ],

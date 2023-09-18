@@ -11,7 +11,7 @@ class FavoriteScreen extends GetView<FavoriteController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'favorite'),
+      appBar:  CustomAppBar(title: 'favorite'.tr),
       body: GetBuilder<FavoriteController>(
         builder: (favorite) => favorite.loading
             ? const Center(child: CircularProgressIndicator())
