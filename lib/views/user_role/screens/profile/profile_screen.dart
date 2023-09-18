@@ -16,6 +16,7 @@ class ProfileScreen extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     Get.lazyPut(() => ProfileService());
+    Get.lazyPut(() => ProfileController());
     LocalController localController = Get.find();
     return Scaffold(
         appBar: AppBar(

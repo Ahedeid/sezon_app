@@ -8,4 +8,5 @@ class RouteName {
   static const String profileRoute = '/profileRoute';
   static const String purchaseCompletionRoute = '/purchaseCompletionRoute';
   static const String notifications = '/notifications';
+  static const String bnbAdmin = '/bnbAdmin';
 }

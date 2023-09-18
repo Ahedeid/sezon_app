@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/router/route_name.dart';
@@ -22,7 +21,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 2), () {
       Get.toNamed(sl<SharedPrefController>().getLoggedIn()
-          ? RouteName.mainRoute
+          ? RouteName.bnbAdmin
+      //RouteName.mainRoute
           : RouteName.loginRoute);
     });
   }
