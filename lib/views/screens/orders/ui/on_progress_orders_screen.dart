@@ -27,17 +27,20 @@ class OnProgressOrders extends StatelessWidget {
                     height: 63,
                     width: 83,
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('handmade_colorful_ceramics'.tr,
-                          style: StyleManager.smallText(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          )),
-                      Text(
-                          'this_text_is_an_example_of_text'.tr)
-                    ],
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('handmade_colorful_ceramics'.tr,
+                            style: StyleManager.smallText(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            )),
+                        Text(
+                            'this_text_is_an_example_of_text'.tr,
+                        )
+                      ],
+                    ),
                   )
                 ]),
               ),

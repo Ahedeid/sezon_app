@@ -32,7 +32,8 @@ class ProfileController extends GetxController {
         UserModel(
             fullName: userNameController.text,
             password: passwordController.text,
-            phoneNumber: phoneController.text),
+            phoneNumber: phoneController.text,
+        ),
       );
 
       if (result == true) {
