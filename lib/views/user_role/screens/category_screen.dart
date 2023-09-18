@@ -42,7 +42,7 @@ class CategoryScreen extends GetView<CategoryController> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               const SizedBox(
-                                width: 5,
+                                width: 4,
                               ),
                               CategoryWidget(
                                 image:

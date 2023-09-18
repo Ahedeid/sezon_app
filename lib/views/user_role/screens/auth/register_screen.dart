@@ -93,12 +93,12 @@ class RegisterScreen extends GetView<RegisterController> {
                     height: 38,
                   ),
                   RichTextWidget(
-                    text1: 'have_account '.tr,
+                    text1: 'have_account'.tr,
                     text2: 'login'.tr,
                     onTap: () {
                       Get.toNamed(RouteName.loginRoute);
                     },
-                  )
+                  ),
                 ],
               ),
             )

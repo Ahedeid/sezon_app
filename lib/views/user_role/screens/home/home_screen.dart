@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
               init: HomeController(),
               builder: (controller) {
                 return SizedBox(
-                  height: 75,
+                  height: 90,
                   child: ListView.separated(
                     physics: const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             const SizedBox(
-              height: 31,
+              height: 20,
             ),
             LabelWidget(text: 'products'.tr),
             GetBuilder<HomeController>(

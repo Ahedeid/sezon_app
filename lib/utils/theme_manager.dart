@@ -30,7 +30,7 @@ class ThemeManager {
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(6),
         borderSide: const BorderSide(
-          color: Colors.blue,
+          color: ColorManager.redColor,
         ),
       ),
       errorBorder: OutlineInputBorder(
