@@ -22,7 +22,7 @@ class RegisterController extends GetxController {
 
   String? validatePasswordMath(String? value) {
     if (value == null || value.isEmpty) {
-      return 'هذا الحقل مطلوب';
+      return 'this_field_required'.tr;
     } else if (value != passwordController.text) {
       return 'كلمة المرور غير متطابقة';
     }

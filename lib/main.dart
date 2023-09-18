@@ -43,7 +43,185 @@ class SezonApp extends StatelessWidget {
       initialRoute: RouteName.splashRoute,
       getPages: AppRoute.routes,
       translations: Languages(),
-      locale: const Locale('ar'),
+      locale: Get.deviceLocale,
     );
   }
 }
+
+
+
+// import 'package:flutter/material.dart';
+//
+// void main() {
+//   runApp(MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: CategorySelectionScreen(),
+//     );
+//   }
+// }
+//
+// class CategorySelectionScreen extends StatefulWidget {
+//   @override
+//   _CategorySelectionScreenState createState() =>
+//       _CategorySelectionScreenState();
+// }
+//
+// class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
+//   List<Map<String, String>> categories = [
+//     {"name": "Category 1", "id": "65567567asd"},
+//     {"name": "Category 2", "id": "asdasd67567sad6756sd"},
+//     // Add more categories here
+//   ];
+//
+//   String selectedCategory = "";
+//
+//   void _showCategoryBottomSheet(BuildContext context) {
+//     showModalBottomSheet(
+//       context: context,
+//       builder: (BuildContext context) {
+//         return Container(
+//           height: 200, // Adjust the height as needed
+//           child: ListView.builder(
+//             itemCount: categories.length,
+//             itemBuilder: (BuildContext context, int index) {
+//               final category = categories[index];
+//               return ListTile(
+//                 title: Text(category['name'] ?? ''),
+//                 onTap: () {
+//                   setState(() {
+//                     selectedCategory = category['name'] ?? '';
+//                   });
+//                   Navigator.pop(context); // Close the bottom sheet
+//                 },
+//               );
+//             },
+//           ),
+//         );
+//       },
+//     );
+//   }
+//
+//
+//   void _showCategorySelectionBottomSheet(BuildContext context) async {
+//     final result = await showModalBottomSheet<String>(
+//       context: context,
+//       builder: (BuildContext context) {
+//         return CategorySelectionBottomSheet(categories: categories);
+//       },
+//     );
+//
+//     if (result != null) {
+//       setState(() {
+//         selectedCategory = result;
+//       });
+//     }
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Category Selection'),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             Text(
+//               'Selected Category:',
+//               style: TextStyle(fontSize: 20),
+//             ),
+//             Text(
+//               selectedCategory,
+//               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+//             ),
+//             ElevatedButton(
+//               onPressed: () {
+//                 _showCategorySelectionBottomSheet(context);
+//               },
+//               child: Text('Select Category'),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+//
+// }
+//
+//
+// class CategorySelectionBottomSheet extends StatefulWidget {
+//   final List<Map<String, String>> categories;
+//
+//   CategorySelectionBottomSheet({required this.categories});
+//
+//   @override
+//   _CategorySelectionBottomSheetState createState() =>
+//       _CategorySelectionBottomSheetState();
+// }
+//
+// class _CategorySelectionBottomSheetState
+//     extends State<CategorySelectionBottomSheet> {
+//   String? selectedCategory;
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return GestureDetector(
+//       onTap: () {
+//         // Close the bottom sheet when tapped outside the content.
+//         Navigator.pop(context, selectedCategory);
+//       },
+//       child: Container(
+//         color: Colors.transparent,
+//         child: Column(
+//           mainAxisSize: MainAxisSize.min,
+//           children: <Widget>[
+//             Container(
+//               padding: EdgeInsets.all(16.0),
+//               decoration: BoxDecoration(
+//                 color: Colors.white,
+//                 borderRadius: BorderRadius.vertical(top: Radius.circular(16.0)),
+//               ),
+//               child: Text(
+//                 'Select Category ${selectedCategory}',
+//                 style: TextStyle(
+//                   fontSize: 18.0,
+//                   fontWeight: FontWeight.bold,
+//                 ),
+//               ),
+//             ),
+//             ListView.builder(
+//               shrinkWrap: true,
+//               itemCount: widget.categories.length,
+//               itemBuilder: (context, index) {
+//                 final category = widget.categories[index];
+//                 return ListTile(
+//                   title: Text(category['name']!),
+//                   leading: Radio<String>(
+//                     value: category['id']!,
+//                     groupValue: selectedCategory,
+//                     onChanged: (value) {
+//                       setState(() {
+//                         selectedCategory = value;
+//                       });
+//                     },
+//                   ),
+//                   onTap: () {
+//                     setState(() {
+//                       selectedCategory = category['id'];
+//                     });
+//                   },
+//                 );
+//               },
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
