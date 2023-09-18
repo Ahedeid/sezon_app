@@ -3,6 +3,7 @@ class AssetPath {
 
   // -------------------------- image path ------------------------------------
   static const String authBackground = '${baseImage}auth_background.png';
+  static const String splashBackground = '${baseImage}splash.png';
   static const String logo = '${baseImage}logo.png';
   static const String placeholder = '${baseImage}placeholder.png';
   static const String category = '${baseImage}categoryImage.png';

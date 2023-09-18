@@ -38,9 +38,7 @@ class SezonApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Sezon App',
       theme: ThemeManager.theme,
-      initialRoute: sl<SharedPrefController>().getLoggedIn()
-          ? RouteName.mainRoute
-          : RouteName.loginRoute,
+      initialRoute: RouteName.splashRoute,
       getPages: AppRoute.routes,
     );
   }
