@@ -74,7 +74,7 @@ class LoginScreen extends GetView<LoginController> {
                   height: 38,
                 ),
                 RichTextWidget(
-                  text1: 'don\'t_have_account'.tr,
+                  text1: 'don\'t_have_account '.tr,
                   text2: 'new_account'.tr,
                   onTap: () {
                     Get.toNamed(RouteName.registerRoute);
