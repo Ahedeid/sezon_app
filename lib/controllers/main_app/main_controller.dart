@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/models/tab_model.dart';
-import 'package:sezon_app/views/screens/home/home_screen.dart';
-import 'package:sezon_app/views/screens/orders/ui/orders_screen.dart';
-import 'package:sezon_app/views/screens/category_screen.dart';
-import 'package:sezon_app/views/screens/favorite_screen.dart';
+import 'package:sezon_app/views/user_role/screens/home/home_screen.dart';
+import 'package:sezon_app/views/user_role/screens/orders/ui/orders_screen.dart';
+import 'package:sezon_app/views/user_role/screens/category_screen.dart';
+import 'package:sezon_app/views/user_role/screens/favorite_screen.dart';
 
 
 class MainController extends GetxController {

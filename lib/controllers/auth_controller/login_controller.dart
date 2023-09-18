@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/services/authServices/auth_service.dart';
-import 'package:sezon_app/views/widget/loading_widget.dart';
+import 'package:sezon_app/views/user_role/widget/loading_widget.dart';
 
 class LoginController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();

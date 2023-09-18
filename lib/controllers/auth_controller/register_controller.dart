@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:sezon_app/models/user_model.dart';
 import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/services/authServices/auth_service.dart';
-import 'package:sezon_app/views/widget/loading_widget.dart';
+import 'package:sezon_app/views/user_role/widget/loading_widget.dart';
 
 class RegisterController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
