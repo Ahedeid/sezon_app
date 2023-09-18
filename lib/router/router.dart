@@ -4,12 +4,15 @@ import 'package:sezon_app/controllers/auth_controller/otp_binding.dart';
 import 'package:sezon_app/controllers/auth_controller/register_binding.dart';
 import 'package:sezon_app/controllers/home_controllers/details_binding.dart';
 import 'package:sezon_app/controllers/main_app/main_binding.dart';
+import 'package:sezon_app/controllers/profile_controller/profile_binding.dart';
 import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/views/screens/home/product_details.dart';
 import 'package:sezon_app/views/screens/auth/login_screen.dart';
 import 'package:sezon_app/views/screens/auth/otp_screen.dart';
 import 'package:sezon_app/views/screens/auth/register_screen.dart';
 import 'package:sezon_app/views/screens/main_screen.dart';
+import 'package:sezon_app/views/screens/orders/ui/purchase_completion_screen.dart';
+import 'package:sezon_app/views/screens/profile/profile_screen.dart';
 import 'package:sezon_app/views/screens/splash_screen.dart';
 
 
@@ -39,13 +42,13 @@ class AppRoute {
         name: RouteName.productDetailsRoute,
         page: () => const ProductDetailScreen(),
         binding: DetailBinding()),
-    // GetPage(
-    //     name: RouteName.profileRoute,
-    //     page: () => const ProfileScreen(),
-    //     binding: ProfileBinding()),
-    // GetPage(
-    //   name: RouteName.purchaseCompletionRoute,
-    //   page: () => PurchaseCompletionScreen(),
-    // )
+    GetPage(
+        name: RouteName.profileRoute,
+        page: () => const ProfileScreen(),
+        binding: ProfileBinding()),
+    GetPage(
+      name: RouteName.purchaseCompletionRoute,
+      page: () => PurchaseCompletionScreen(),
+    )
   ];
 }
