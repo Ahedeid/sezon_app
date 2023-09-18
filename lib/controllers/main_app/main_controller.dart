@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/models/tab_model.dart';
-import 'package:sezon_app/views/favorite/favorite_screen.dart';
+import 'package:sezon_app/views/favorite_screen.dart';
 import 'package:sezon_app/views/home/home_screen.dart';
 
 

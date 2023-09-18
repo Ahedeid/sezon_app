@@ -9,7 +9,7 @@ import 'package:sezon_app/views/auth/login_screen.dart';
 import 'package:sezon_app/views/auth/otp_screen.dart';
 import 'package:sezon_app/views/auth/register_screen.dart';
 import 'package:sezon_app/views/home/product_details.dart';
-import 'package:sezon_app/views/mainApp/main_screen.dart';
+import 'package:sezon_app/views/main_screen.dart';
 import 'package:sezon_app/views/splash_screen.dart';
 
 class AppRoute {
