@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../../utils/style_manager.dart';
-import '../../home/homeComponent/label_widget.dart';
+import 'package:sezon_app/utils/style_manager.dart';
+import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
 
 class PaymentMethodDetails extends StatelessWidget {
   const PaymentMethodDetails({super.key});

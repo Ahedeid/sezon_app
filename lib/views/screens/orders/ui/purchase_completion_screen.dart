@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'package:sezon_app/controllers/order_controller.dart';
 import 'package:sezon_app/utils/assets_path.dart';
 import 'package:sezon_app/utils/style_manager.dart';
-import 'package:sezon_app/views/orders/orders_compponents/address_bottom_sheet.dart';
-import 'package:sezon_app/views/orders/orders_compponents/list_tile_purchase_widget.dart';
-import 'package:sezon_app/views/orders/orders_compponents/payment_bottom_sheet.dart';
-import 'package:sezon_app/views/orders/orders_compponents/product_characteristcs_bottom_sheet.dart';
+import 'package:sezon_app/views/screens/orders/orders_compponents/address_bottom_sheet.dart';
+import 'package:sezon_app/views/screens/orders/orders_compponents/list_tile_purchase_widget.dart';
+import 'package:sezon_app/views/screens/orders/orders_compponents/payment_bottom_sheet.dart';
+import 'package:sezon_app/views/screens/orders/orders_compponents/product_characteristcs_bottom_sheet.dart';
 
 class PurchaseCompletionScreen extends StatelessWidget {
-  // const PurchaseCompletionScreen({super.key});
+   PurchaseCompletionScreen({super.key});
   var value = Get.put(OrderController());
 
   @override

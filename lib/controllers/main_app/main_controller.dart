@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/models/tab_model.dart';
-import 'package:sezon_app/views/favorite_screen.dart';
-import 'package:sezon_app/views/home/home_screen.dart';
+import 'package:sezon_app/views/screens/home/home_screen.dart';
+import 'package:sezon_app/views/screens/orders/ui/orders_screen.dart';
+import 'package:sezon_app/views/screens/category_screen.dart';
+import 'package:sezon_app/views/screens/favorite_screen.dart';
 
 
 class MainController extends GetxController {
   var currentIndex = 0.obs;
 
   changeIndex(int index) {
-    print(currentIndex.value);
+    debugPrint(currentIndex.value.toString());
     currentIndex.value = index;
   }
 
@@ -21,8 +23,8 @@ class MainController extends GetxController {
   ];
   final pages = [
     const HomeScreen(),
-    // CategoryScreen(),
-    // const OrdersScreen(),
+    CategoryScreen(),
+    const OrdersScreen(),
     FavoriteScreen()
   ];
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/controllers/home_controllers/home_controller.dart';
-import 'package:sezon_app/views/home/homeComponent/label_widget.dart';
-import 'package:sezon_app/views/home/homeComponent/search_widget.dart';
+import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
+import 'package:sezon_app/views/screens/home/homeComponent/search_widget.dart';
 import 'package:sezon_app/views/widget/category_widget.dart';
 import 'package:sezon_app/views/widget/custome_appbar.dart';
 import 'package:sezon_app/views/widget/product_widget.dart';

@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/service_locator.dart';
 import 'package:sezon_app/services/sharedPref/shared_pref.dart';
 import 'package:sezon_app/utils/assets_path.dart';
 
-import '../router/route_name.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

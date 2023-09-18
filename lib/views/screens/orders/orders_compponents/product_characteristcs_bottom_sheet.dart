@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/utils/style_manager.dart';
-import 'package:sezon_app/views/home/homeComponent/label_widget.dart';
+import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
 import 'package:sezon_app/views/widget/cutom_text_field_widget.dart';
 
 

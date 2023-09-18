@@ -5,8 +5,8 @@ import 'package:sezon_app/controllers/order_controller.dart';
 import 'package:sezon_app/utils/assets_path.dart';
 import 'package:sezon_app/utils/color_manager.dart';
 import 'package:sezon_app/utils/style_manager.dart';
-import 'package:sezon_app/views/home/homeComponent/label_widget.dart';
-import 'package:sezon_app/views/orders/orders_compponents/payment_details_bottom_sheet.dart';
+import 'package:sezon_app/views/screens/home/homeComponent/label_widget.dart';
+import 'package:sezon_app/views/screens/orders/orders_compponents/payment_details_bottom_sheet.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({
