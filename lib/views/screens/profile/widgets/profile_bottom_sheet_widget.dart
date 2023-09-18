@@ -9,10 +9,10 @@ import 'package:sezon_app/views/widget/cutom_text_field_widget.dart';
 
 class ProfileBottomSheet extends GetView<ProfileController> {
   const ProfileBottomSheet({
-    // required this.userModel,
     super.key,
   });
-  // final UserModel userModel;
+
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -43,7 +43,7 @@ class ProfileBottomSheet extends GetView<ProfileController> {
             CustomTextField(
               controller: controller.phoneController,
               validator: (value) => value!.isValidPhone,
-              hintText: '+972592663280',
+              hintText: '+972592760208',
               labelText: 'phone_number'.tr,
               keyboardType: TextInputType.phone,
             ),
@@ -53,7 +53,7 @@ class ProfileBottomSheet extends GetView<ProfileController> {
             CustomTextField(
               controller: controller.passwordController,
               validator: (value) => value!.isValidPassword,
-              hintText: '123456789',
+              hintText: '123451234',
               labelText: 'password'.tr,
             ),
             const SizedBox(
@@ -67,7 +67,10 @@ class ProfileBottomSheet extends GetView<ProfileController> {
                 'حفظ',
                 style: StyleManager.smallText(color: Colors.white),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 35,
+            ),
           ],
         ),
       ),
