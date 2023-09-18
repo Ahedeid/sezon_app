@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:sezon_app/controllers/local_controller.dart';
 import 'package:sezon_app/firebase_options.dart';
 import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/router/router.dart';
@@ -34,6 +35,7 @@ class SezonApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.put(LocalController());
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sezon App',

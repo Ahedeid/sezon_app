@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sezon_app/controllers/local_controller.dart';
 import 'package:sezon_app/controllers/profile_controller/profile_controller.dart';
 import 'package:sezon_app/router/route_name.dart';
 import 'package:sezon_app/service_locator.dart';
@@ -15,6 +16,7 @@ class ProfileScreen extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     Get.lazyPut(() => ProfileService());
+    LocalController localController = Get.find();
     return Scaffold(
         appBar: AppBar(
           leading: IconButton(
@@ -106,7 +108,37 @@ class ProfileScreen extends GetView<ProfileController> {
                     ProfileWidget(
                       icon: Icons.language,
                       text: 'language'.tr,
-                      onTap: () {},
+                      onTap: () {
+                        Get.bottomSheet(Container(
+                          decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(8),
+                                topRight: Radius.circular(8),
+                              )),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 24, vertical: 20),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              ListTile(
+                                onTap: () {
+                                  localController.changeLang('en');
+                                },
+                                title: const Text('English'),
+                              ),
+                              const Divider(),
+                              ListTile(
+                                onTap: () {
+                                  localController.changeLang('ar');
+                                },
+                                title: const Text('Arabic'),
+                              ),
+                              const SizedBox(height: 20,)
+                            ],
+                          ),
+                        ));
+                      },
                     ),
                     const SizedBox(
                       height: 10,
