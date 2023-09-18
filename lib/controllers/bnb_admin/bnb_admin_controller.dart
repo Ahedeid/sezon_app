@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/models/tab_model.dart';
-import 'package:sezon_app/views/user_role/screens/home/home_screen.dart';
+import 'package:sezon_app/views/admin_role/screens/home_admin/home_screen_admin.dart';
 import 'package:sezon_app/views/user_role/screens/notification_screen.dart';
 import 'package:sezon_app/views/user_role/screens/orders/ui/orders_screen.dart';
 import 'package:sezon_app/views/user_role/screens/profile/profile_screen.dart';
@@ -22,7 +22,7 @@ class BNBAdminController extends GetxController {
     TabModel(icon: Icons.person, label: 'profile'),
   ];
   final pages = [
-    const HomeScreen(),
+    const HomeScreenAdmin(),
     const OrdersScreen(),
     const NotificationScreen(),
     const ProfileScreen()

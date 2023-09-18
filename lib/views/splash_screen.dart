@@ -6,7 +6,6 @@ import 'package:sezon_app/service_locator.dart';
 import 'package:sezon_app/services/sharedPref/shared_pref.dart';
 import 'package:sezon_app/utils/assets_path.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -20,9 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 2), () {
-      Get.toNamed(sl<SharedPrefController>().getLoggedIn()
-          ? RouteName.bnbAdmin
-      //RouteName.mainRoute
+      Get.offNamed(sl<SharedPrefController>().getLoggedIn()
+          ? RouteName.mainRoute
           : RouteName.loginRoute);
     });
   }
