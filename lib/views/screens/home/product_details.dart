@@ -23,7 +23,7 @@ class ProductDetailScreen extends GetView<DetailsController> {
             },
             icon: const Icon(Icons.arrow_back_ios)),
         title: Text(
-          'تفاصيل المنتج',
+          'Product_details'.tr,
           style: StyleManager.headline1(fontSize: 18),
         ),
         centerTitle: true,
@@ -92,8 +92,8 @@ class ProductDetailScreen extends GetView<DetailsController> {
                     const SizedBox(
                       height: 30,
                     ),
-                    const LabelWidget(
-                      text: 'منتجات ذات صلة',
+                     LabelWidget(
+                      text: 'related_products'.tr,
                     ),
                     const SizedBox(
                       height: 10,
@@ -143,8 +143,8 @@ class ProductDetailScreen extends GetView<DetailsController> {
                               return element.id == Get.arguments.id;
                             },
                           )
-                              ? Get.snackbar("Info",
-                                  "This product already added to the favorites")
+                              ? Get.snackbar("info".tr,
+                                  "this_product_already_added_to_the_favorites".tr)
                               : Get.find<FavoriteController>()
                                   .addToFavorites(Get.arguments);
                         },
@@ -158,7 +158,7 @@ class ProductDetailScreen extends GetView<DetailsController> {
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5)))),
                         child: Text(
-                          'إضافة إلى المفضلة',
+                          'add_to_favorites'.tr,
                           style: StyleManager.smallText(
                               fontWeight: FontWeight.bold,
                               color: ColorManager.redColor),
@@ -176,7 +176,7 @@ class ProductDetailScreen extends GetView<DetailsController> {
                                 topLeft: Radius.circular(5),
                                 bottomLeft: Radius.circular(5)))),
                     child: Text(
-                      'شراء الان',
+                      'buy_now'.tr,
                       style: StyleManager.smallText(
                           fontWeight: FontWeight.bold, color: Colors.white),
                     ),

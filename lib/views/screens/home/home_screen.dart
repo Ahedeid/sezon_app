@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const CustomAppBar(title: 'home'),
+      appBar:  CustomAppBar(title: 'home'.tr),
       body: ListView(
         padding: const EdgeInsets.symmetric(
           horizontal: 16,
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(
             height: 31,
           ),
-          const LabelWidget(text: 'category'),
+           LabelWidget(text: 'category'.tr),
           const SizedBox(
             height: 21,
           ),

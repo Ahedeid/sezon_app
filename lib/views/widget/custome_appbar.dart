@@ -24,7 +24,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       bottom: bottom,
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.toNamed(RouteName.notifications);
+          },
           icon: const Icon(
             Icons.notifications,
             color: ColorManager.grayColor,
@@ -33,7 +35,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ],
       leading: IconButton(
           onPressed: () {
-            // Get.toNamed(RouteName.profileRoute);
+            Get.toNamed(RouteName.profileRoute);
           },
           icon: const CircleAvatar(
             radius: 15,
