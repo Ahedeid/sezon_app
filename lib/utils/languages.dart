@@ -73,6 +73,7 @@ class Languages extends Translations {
        'edit_profile': 'Edit profile',
        'language': 'Change Language',
        'logout': 'Logout',
+       'notifications': 'Notifications',
         },
     //------------------------- arabic ---------------------------
         'ar': {
@@ -146,6 +147,7 @@ class Languages extends Translations {
           'edit_profile':'تعديل الملف الشخصي',
           'language':'تغير اللغة',
           'logout':'تسجيل الخروج',
+          'notifications':'الاشعارات',
 
         }
       };

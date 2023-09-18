@@ -11,6 +11,7 @@ import 'package:sezon_app/views/screens/auth/login_screen.dart';
 import 'package:sezon_app/views/screens/auth/otp_screen.dart';
 import 'package:sezon_app/views/screens/auth/register_screen.dart';
 import 'package:sezon_app/views/screens/main_screen.dart';
+import 'package:sezon_app/views/screens/notification_screen.dart';
 import 'package:sezon_app/views/screens/orders/ui/purchase_completion_screen.dart';
 import 'package:sezon_app/views/screens/profile/profile_screen.dart';
 import 'package:sezon_app/views/screens/splash_screen.dart';
@@ -49,6 +50,10 @@ class AppRoute {
     GetPage(
       name: RouteName.purchaseCompletionRoute,
       page: () => PurchaseCompletionScreen(),
+    ) ,
+    GetPage(
+      name: RouteName.notifications,
+      page: () => const NotificationScreen(),
     )
   ];
 }
