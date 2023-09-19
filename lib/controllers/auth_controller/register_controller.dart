@@ -47,7 +47,8 @@ class RegisterController extends GetxController {
             arguments: UserModel(
                 fullName: userNameController.text,
                 password: passwordController.text,
-                phoneNumber: phoneController.text));
+                phoneNumber: phoneController.text,
+            ));
       } else {
         if (Get.isDialogOpen!) Get.back();
         Get.snackbar(

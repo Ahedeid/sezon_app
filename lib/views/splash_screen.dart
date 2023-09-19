@@ -20,7 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 2), () {
       Get.offNamed(sl<SharedPrefController>().getLoggedIn()
-          ? RouteName.mainRoute
+          ? sl<SharedPrefController>().getUser().role == 0
+              ? RouteName.mainRoute
+              : RouteName.bnbAdmin
           : RouteName.loginRoute);
     });
   }

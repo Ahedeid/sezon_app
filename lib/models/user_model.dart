@@ -7,18 +7,23 @@ class UserModel {
   final String password;
   final String phoneNumber;
   final String imageLink;
+  final int? role;
+
   UserModel({
     this.id,
     required this.fullName,
     required this.password,
     required this.phoneNumber,
     this.imageLink = '',
+    this.role,
   });
+
   toJson() => {
         "FullName": fullName,
         "Phone": phoneNumber,
         "Password": password,
         "imageLink": imageLink,
+        "role": role,
       };
 
   factory UserModel.fromSnapshot(
@@ -30,6 +35,7 @@ class UserModel {
       password: data['Password'],
       phoneNumber: data['Phone'],
       imageLink: data['imageLink'],
+      role: data['role'],
     );
   }
 
@@ -39,6 +45,7 @@ class UserModel {
       password: json['Password'],
       phoneNumber: json['Phone'],
       imageLink: json['imageLink'],
+      role: json['role'],
     );
   }
 
