@@ -21,9 +21,9 @@ void main() async {
   });
   await init();
 
-  Stripe.publishableKey =
-      'pk_test_51NrxQzIBQSM6ft7jjLug7WUJQiaLc72qxGNF5Jyskyecr0VEIXvAxODMcm9klpNDhwMhY1Ig6xXo5vK73n8zkTCn00CIMrNqi7';
-  await Stripe.instance.applySettings();
+  // Stripe.publishableKey =
+  //     'pk_test_51NrxQzIBQSM6ft7jjLug7WUJQiaLc72qxGNF5Jyskyecr0VEIXvAxODMcm9klpNDhwMhY1Ig6xXo5vK73n8zkTCn00CIMrNqi7';
+  // await Stripe.instance.applySettings();
 
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
