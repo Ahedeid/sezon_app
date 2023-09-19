@@ -68,7 +68,9 @@ class AddProductScreen extends GetView<AddProductController> {
       floatingActionButton: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            controller.addProduct();
+          },
           child: Text(
             'add'.tr,
             style: const TextStyle(
