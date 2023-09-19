@@ -21,6 +21,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("notifications".tr),
+        centerTitle: true,
       ),
       body: StreamBuilder<QuerySnapshot>(
           stream:
