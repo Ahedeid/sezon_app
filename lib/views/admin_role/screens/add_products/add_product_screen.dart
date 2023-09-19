@@ -11,7 +11,7 @@ class AddProductScreen extends GetView<AddProductController> {
   Widget build(BuildContext context) {
     Get.put(AddProductController());
     return Scaffold(
-      appBar: AppBar(title: Text('add_product'.tr)),
+      appBar: AppBar(title: Text('add_product'.tr),centerTitle: true,),
       body: GestureDetector(
         onTap: () {
           FocusScopeNode currentFocus = FocusScope.of(context);

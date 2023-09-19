@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:sezon_app/controllers/local_controller.dart';
 import 'package:sezon_app/firebase_options.dart';
@@ -19,6 +20,10 @@ void main() async {
     Get.put(AuthService());
   });
   await init();
+
+  Stripe.publishableKey =
+      'pk_test_51NrxQzIBQSM6ft7jjLug7WUJQiaLc72qxGNF5Jyskyecr0VEIXvAxODMcm9klpNDhwMhY1Ig6xXo5vK73n8zkTCn00CIMrNqi7';
+  await Stripe.instance.applySettings();
 
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
@@ -47,8 +52,6 @@ class SezonApp extends StatelessWidget {
     );
   }
 }
-
-
 
 // import 'package:flutter/material.dart';
 //

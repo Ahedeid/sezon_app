@@ -13,7 +13,7 @@ class HomeScreenAdmin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(title: Text('home'.tr)),
+      appBar: AppBar(title: Text('home'.tr),centerTitle: true,),
       body: GestureDetector(
         onTap: () {
           FocusScopeNode currentFocus = FocusScope.of(context);
