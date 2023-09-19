@@ -20,11 +20,11 @@ class ProfileScreen extends GetView<ProfileController> {
     LocalController localController = Get.find();
     return Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-              onPressed: () {
-                Get.back();
-              },
-              icon: const Icon(Icons.arrow_back_ios)),
+          // leading: IconButton(
+          //     onPressed: () {
+          //       Get.back();
+          //     },
+          //     icon: const Icon(Icons.arrow_back_ios)),
           title: Text(
             'profile'.tr,
             style: StyleManager.headline1(fontSize: 18),

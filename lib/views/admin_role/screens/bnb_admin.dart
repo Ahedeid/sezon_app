@@ -20,6 +20,7 @@ class BNBAdmin extends GetView<BNBAdminController> {
               // }
               controller.changeIndex(value);
             },
+            backgroundColor: Colors.white,
             selectedItemColor: ColorManager.redColor,
             currentIndex: controller.currentIndex.value,
             selectedLabelStyle: const TextStyle(
