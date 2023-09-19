@@ -7,6 +7,7 @@ import 'package:sezon_app/controllers/home_controllers/details_binding.dart';
 import 'package:sezon_app/controllers/main_app/main_binding.dart';
 import 'package:sezon_app/controllers/profile_controller/profile_binding.dart';
 import 'package:sezon_app/router/route_name.dart';
+import 'package:sezon_app/views/admin_role/screens/add_products/add_product_screen.dart';
 import 'package:sezon_app/views/admin_role/screens/bnb_admin.dart';
 import 'package:sezon_app/views/user_role/screens/home/product_details.dart';
 import 'package:sezon_app/views/user_role/screens/auth/login_screen.dart';
@@ -18,12 +19,11 @@ import 'package:sezon_app/views/user_role/screens/orders/ui/purchase_completion_
 import 'package:sezon_app/views/user_role/screens/profile/profile_screen.dart';
 import 'package:sezon_app/views/splash_screen.dart';
 
-
 class AppRoute {
   static final routes = <GetPage>[
     GetPage(
-        name: RouteName.splashRoute,
-        page: () => const SplashScreen(),
+      name: RouteName.splashRoute,
+      page: () => const SplashScreen(),
     ),
     GetPage(
         name: RouteName.loginRoute,
@@ -52,14 +52,20 @@ class AppRoute {
     GetPage(
       name: RouteName.purchaseCompletionRoute,
       page: () => PurchaseCompletionScreen(),
-    ) ,
+    ),
     GetPage(
       name: RouteName.notifications,
       page: () => const NotificationScreen(),
     ),
     GetPage(
-        name: RouteName.bnbAdmin,
-        page: () => BNBAdmin(),
-        binding: BNBAdminBinding()),
+      name: RouteName.bnbAdmin,
+      page: () => BNBAdmin(),
+      binding: BNBAdminBinding(),
+    ),
+    GetPage(
+      name: RouteName.addProducts,
+      page: () =>  AddProductScreen(),
+      // binding: BNBAdminBinding(),
+    ),
   ];
 }
