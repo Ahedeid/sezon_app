@@ -7,7 +7,6 @@ import 'package:sezon_app/views/user_role/widget/category_widget.dart';
 import 'package:sezon_app/views/user_role/widget/custome_appbar.dart';
 import 'package:sezon_app/views/user_role/widget/product_widget.dart';
 
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -15,9 +14,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar:  CustomAppBar(title: 'home'.tr),
+      appBar: CustomAppBar(title: 'home'.tr),
       body: GestureDetector(
-        onTap: (){
+        onTap: () {
           FocusScopeNode currentFocus = FocusScope.of(context);
           if (!currentFocus.hasPrimaryFocus &&
               currentFocus.focusedChild != null) {
@@ -34,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 31,
             ),
-             LabelWidget(text: 'category'.tr),
+            LabelWidget(text: 'category'.tr),
             const SizedBox(
               height: 21,
             ),
@@ -52,16 +51,18 @@ class HomeScreen extends StatelessWidget {
                     separatorBuilder: (context, index) => const SizedBox(
                       width: 10,
                     ),
-                    itemBuilder: (context, index) => controller.categoryLoading
-                        ? const SizedBox(
-                            height: 30,
-                            width: 30,
-                            child: CircularProgressIndicator())
-                        : CategoryWidget(
-                            category: controller.categories[index].name,
-                            onTap: () {},
-                            image: controller.categories[index].image,
-                          ),
+                    itemBuilder: (context, index) =>
+                        controller.categoryLoading
+                            ? Container(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 20),
+                                width: 40,
+                                child: const CircularProgressIndicator())
+                            : CategoryWidget(
+                                category: controller.categories[index].name,
+                                onTap: () {},
+                                image: controller.categories[index].image,
+                              ),
                   ),
                 );
               },
