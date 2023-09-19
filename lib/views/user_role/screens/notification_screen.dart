@@ -64,18 +64,18 @@ class _NotificationScreenState extends State<NotificationScreen> {
                           notificationData.title,
                           style: StyleManager.headline2,
                         ),
-                        trailing: Text(
-                          notificationData.time,
+                        subtitle: Text(
+                          'منذ  ${notificationData.time} ساعات ',
                           //  timeFormat,
                           style: StyleManager.labelStyle,
                         ),
                       ),
-                      const SizedBox(height: 4),
-                      Text(
-                        notificationData.body,
-                        style: StyleManager.smallText(),
-                      ),
-                      const SizedBox(height: 8),
+                      // const SizedBox(height: 4),
+                      // Text(
+                      //   notificationData.body,
+                      //   style: StyleManager.smallText(),
+                      // ),
+                      // const SizedBox(height: 8),
                       const Divider(),
                     ],
                   );
